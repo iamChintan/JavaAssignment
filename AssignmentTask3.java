@@ -109,7 +109,7 @@ public class AssignmentTask3 {
                     System.out.print(" ");
                 }
             }
-            System.out.println();
+            System.out.println(" ");
         }
     }
 
