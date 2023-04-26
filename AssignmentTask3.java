@@ -88,8 +88,29 @@ public class AssignmentTask3 {
             System.out.print("Do you want to perform the operation again? (Y/N): ");
             choice = input.next().charAt(0);
         } while (choice == 'Y' || choice == 'y');
+        System.out.println(" ");
 
 
+
+
+        // problem 7: Pattern
+        PrintPattern();
+
+
+    }
+
+    private static void PrintPattern() {
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            for (int j = n; j >= 1; j--) {
+                if (j <= i) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
     }
 
     private static boolean isPrime(int num) {
