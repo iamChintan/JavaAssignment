@@ -68,6 +68,26 @@ public class AssignmentTask3 {
         }
 
         System.out.println("The sum of the first " + n + " even numbers is " + sum);
+        System.out.println(" ");
+
+
+
+        // Problem 6: Sum of two numbers using loop
+        char choice;
+
+        do {
+            System.out.print("Enter the first number: ");
+            int num1 = input.nextInt();
+
+            System.out.print("Enter the second number: ");
+            int num2 = input.nextInt();
+
+            int total = num1 + num2;
+            System.out.println("The sum is " + total);
+
+            System.out.print("Do you want to perform the operation again? (Y/N): ");
+            choice = input.next().charAt(0);
+        } while (choice == 'Y' || choice == 'y');
 
 
     }
