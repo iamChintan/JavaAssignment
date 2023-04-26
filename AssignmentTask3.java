@@ -53,6 +53,21 @@ public class AssignmentTask3 {
             System.out.println("Given number is prime");
         else
             System.out.println("Given number is non prime");
+        System.out.println(" ");
+
+
+
+        // Problem 5: Sum of first even n Numbers
+        System.out.print("Enter a positive integer for sum: ");
+        int n = input.nextInt();
+
+        int i = 1, sum = 0;
+        while (i <= n) {
+            sum += 2*i;
+            i++;
+        }
+
+        System.out.println("The sum of the first " + n + " even numbers is " + sum);
 
 
     }
