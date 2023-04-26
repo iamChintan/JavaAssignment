@@ -40,9 +40,32 @@ public class AssignmentTask3 {
             System.out.println("Given string is Palindrome");
         else
             System.out.println("Given string is not Palindrome");
+        System.out.println(" ");
 
 
 
+
+        // problem 4: check number is prime or not
+        System.out.print("Enter a positive integer for prime: ");
+        int numPrime = input.nextInt();
+
+        if (isPrime(numPrime))
+            System.out.println("Given number is prime");
+        else
+            System.out.println("Given number is non prime");
+
+
+    }
+
+    private static boolean isPrime(int num) {
+        if (num <= 1)
+            return false;
+
+        for (int i = 2; i < Math.sqrt(num); i++){
+            if (num % i == 0)
+                return false;
+        }
+        return true;
     }
 
     private static boolean isPalindrome(String str) {
